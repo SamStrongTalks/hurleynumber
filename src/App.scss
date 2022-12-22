@@ -1,0 +1,177 @@
+
+
+body {
+    background: #120a0d url("../public/img/bg-dark.png") scroll no-repeat center center;
+    background-size: auto 100%;
+    background-attachment: fixed;
+    color: #ff7bac;
+    min-height: 100vh;
+}
+
+header {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
+
+a {
+    display: block;
+}
+
+img {
+    height: 60px;
+}
+
+.avatar{
+    border-radius: 5px;
+}
+
+#root {
+    display: block;
+    width: 100%;
+}
+
+#formula {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 42px;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+div.formula-part {
+    display: inline-block;
+}
+
+#formula-head-part {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+#formula-head-part img {
+    height: 64px;
+    width: 64px;
+}
+
+#formula-fraction-part {
+    margin: 0 1rem;
+
+    #formula-fraction-top {
+        border-bottom: 2px solid #ff7bac;
+    }
+
+    #formula-fraction-bottom {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+#sigma {
+    font-size: 30px;
+    margin-bottom: 2rem;
+    justify-content: center;
+    display: flex;
+}
+
+input[type="number"] {
+    width: 8em;
+}
+
+div.column {
+    align: center;
+}
+
+.explain {
+    text-align: center;
+    margin-top: 50px;
+}
+
+#definitions {
+    margin-top: 50px;
+}
+
+dt {
+    font-weight: bold;
+}
+
+dt:not(:first-child) {
+    margin-top: 1em;
+}
+
+#faq {
+    margin-top: 1em;
+}
+
+
+.section {
+    padding: 3rem 1.5rem;
+}
+
+
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted;
+
+    .tooltiptext {
+        visibility: hidden;
+        width: 400px;
+        background-color: rgba(black, 0.75);
+        color: #fff;
+        text-align: left;
+        padding: 5px 5px;
+        border-radius: 6px;
+
+        bottom: 100%;
+
+        position: absolute;
+        z-index: 1;
+    }
+
+    &:hover .tooltiptext {
+        visibility: visible;
+    }
+}
+
+.input-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+
+    .input-group {
+        display: block;
+        width: 25em;
+    
+        .inputtitle {
+            display: block;
+            clear: both;
+            font-size: 30px;
+        }
+    
+        .input-wrapper {
+            display: block;
+    
+            .input-row {
+                position: relative;
+                display: block;
+                width: 100%;
+                padding: 0.3em;
+    
+                label {
+                    position: relative;
+                    width: 55%;
+                }
+    
+                input[type="number"] {
+                    position: relative;
+                    text-align: right;
+                }
+            }
+        }   
+    }
+}

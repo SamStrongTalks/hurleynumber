@@ -1,11 +1,20 @@
 import { configureStore, ThunkAction, Action } from '@reduxjs/toolkit';
-import counterReducer from '../features/counter/counterSlice';
+import hurleyReducer from '../features/hurley/hurleySlice';
+
+const persistedState: any = localStorage.getItem('hurleyState') 
+                       ? JSON.parse(localStorage.getItem('hurleyState') || "")
+                       : {}
 
 export const store = configureStore({
   reducer: {
-    counter: counterReducer,
+    hurley: hurleyReducer,
   },
+  preloadedState: persistedState,
 });
+
+store.subscribe(()=>{
+  localStorage.setItem('hurleyState', JSON.stringify(store.getState()))
+})
 
 export type AppDispatch = typeof store.dispatch;
 export type RootState = ReturnType<typeof store.getState>;
