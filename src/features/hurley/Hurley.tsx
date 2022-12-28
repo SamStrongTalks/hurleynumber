@@ -60,7 +60,7 @@ export function Hurley(): ReactElement {
                         <img src="img/mykehead.png" id="mykehead" alt='Myke&quot;s head logo' />=</div>
                     <div id="formula-fraction-part" className="formula-part">
                         <div id="formula-fraction-top">
-                            <span className="has-tooltip-multiline" data-tooltip="Keyboards">{ K }</span> + <span className="has-tooltip-multiline" data-tooltip="Switches">{ S }</span> + <span className="has-tooltip-multiline" data-tooltip="Keycaps">{ C }</span> + <span className="has-tooltip-multiline" data-tooltip="Accessories / 4">{ A }</span>
+                            <span className="has-tooltip-multiline" data-tooltip="Keyboards">{ K == 0 ? "K" : K }</span> + <span className="has-tooltip-multiline" data-tooltip="Switches">{ S == 0 ? "S" : S }</span> + <span className="has-tooltip-multiline" data-tooltip="Keycaps">{ C == 0 ? "C" : C }</span> + <span className="has-tooltip-multiline" data-tooltip="Accessories / 4">{ A == A ? "A" : A }</span>
                         </div>
                         <div id="formula-fraction-bottom" className="formula-part">3</div>
                     </div>

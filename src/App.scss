@@ -13,10 +13,10 @@ header {
     display: flex;
     justify-content: space-between;
     margin-bottom: 2rem;
-}
 
-a {
-    display: block;
+    a {
+        display: block;
+    }
 }
 
 img {
@@ -74,14 +74,6 @@ div.formula-part {
     margin-bottom: 2rem;
     justify-content: center;
     display: flex;
-}
-
-input[type="number"] {
-    width: 8em;
-}
-
-div.column {
-    align: center;
 }
 
 .explain {

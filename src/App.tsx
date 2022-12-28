@@ -31,9 +31,8 @@ function App() {
             </div>
             <div className="explain container">
                 <p>
-                    The Hurley Number was created by members of the #keyboards channel of the
-                    <a href="https://www.relay.fm/">Relay.fm</a> members' discord as a standardised measure of the size
-                    of keyboard collections and descent down the keyboard rabbit hole.
+                    The Hurley Number was created by members of the #keyboards channel of the <a href="https://www.relay.fm/">Relay.fm</a> members'
+                    discord as a standardised measure of the size of keyboard collections and descent down the keyboard rabbit hole.
                 </p>
             </div>
             <div id="definitions" className="container">
